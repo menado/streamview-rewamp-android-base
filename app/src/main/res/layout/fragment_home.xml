@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/colorPrimary">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/contentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/bannerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sci-Fi - Action - Detectives"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:paddingStart="@dimen/dp_25"
+                        android:paddingEnd="@dimen/dp_25">
+
+                        <TextView
+                            android:id="@+id/addToMyList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:alpha="0.7"
+                            android:drawableTop="@drawable/ic_add_white_24dp"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/my_list"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_12" />
+
+                        <Button
+                            android:id="@+id/playBannerBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/white"
+                            android:drawableStart="@drawable/ic_play_arrow_black_24dp"
+                            android:foreground="?selectableItemBackground"
+                            android:padding="@dimen/dp_5"
+                            android:text="@string/play" />
+
+
+                        <TextView
+                            android:id="@+id/bannerInfoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:alpha="0.7"
+                            android:drawableTop="@drawable/ic_info_outline_white_24dp"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/info"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_12" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/bannerLayout"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="10dp"
+                android:nestedScrollingEnabled="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                tools:listitem="@layout/item_video_section" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/noResultLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/no_result"
+        android:layout_gravity="center"
+        android:text="@string/no_videos_here"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/shimmer_home_fragment_style"
+        android:visibility="visible"
+        tools:visibility="gone" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:alpha="0.6"
+        android:background="@color/colorPrimaryDark" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/category_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="@color/white"
+        tools:visibility="visible" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/homeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/app_header_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/streamview_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/series"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/series"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/films"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/films"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/kid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/kids"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.CoordinatorLayout>

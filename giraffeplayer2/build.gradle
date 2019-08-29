@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 16
+        versionName "0.1.11-full"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:28.0.0'
+    compile 'com.github.tcking:viewquery:1.5'
+
+    compile 'com.github.tcking:ijkplayer-java:0.8.4'
+    compile 'com.github.tcking:ijkplayer-armv7a:0.8.4'
+    compile 'com.github.tcking:ijkplayer-x86:0.8.4' //support x86
+    compile 'com.github.tcking:ijkplayer-armv5:0.8.4' //support armv5
+}
+apply from: new File(projectDir, "gradle-on-demand.gradle")

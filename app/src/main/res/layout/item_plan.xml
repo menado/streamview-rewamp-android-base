@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_7"
+    android:background="@drawable/cards_background"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha="0.1"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingBottom="40dp"
+        android:text="$ 500.00"
+        android:id="@+id/backAmt"
+        android:textColor="@color/Grey_500"
+        android:textSize="@dimen/sp_45" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Basic"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/noOfAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:text="No of Account 05"
+        android:textColor="@color/Grey_500"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noOfAcc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="$ 500.00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/perMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount"
+        android:layout_centerHorizontal="true"
+        android:text="/Per Month"
+        android:textColor="@color/Grey_500"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perMonth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_access_time_black_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="25 Dec 2019"
+        android:textColor="@color/Grey_500"
+        android:textSize="@dimen/sp_14" />
+
+
+    <TextView
+        android:id="@+id/viewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/btn_background"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:text="View Details"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

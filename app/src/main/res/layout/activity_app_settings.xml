@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="App Settings"
+            app:titleTextColor="@color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Notifications-->
+            <TextView
+                style="@style/TextActivitySubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="Notifications" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryLight"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/bellIconPush"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:src="@drawable/ic_bell_notification" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_toEndOf="@id/bellIconPush"
+                        android:text="@string/push_notifications"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/pushNotificationToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/bellIconEmail"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:src="@drawable/ic_bell_notification" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_toEndOf="@id/bellIconEmail"
+                        android:text="@string/email_notifications"
+                        android:textColor="@color/white" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/emailNotificationToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--About-->
+            <TextView
+                style="@style/TextActivitySubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="About" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryLight"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/deviceIcon"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_device" />
+
+                    <TextView
+                        android:id="@+id/aboutDeviceHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_toEndOf="@id/deviceIcon"
+                        android:text="Device"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/aboutDevice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/aboutDeviceHeader"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_toEndOf="@id/deviceIcon"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="About device" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!--Diagnostic-->
+            <TextView
+                style="@style/TextActivitySubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="Diagnostics" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryLight"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/checkNetworkTile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/checkNetwork"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_check_network" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_toEndOf="@id/checkNetwork"
+                        android:text="Check Network"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/speedTestTile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/speedTest"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_speed_test" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_toEndOf="@id/speedTest"
+                        android:text="Speed test"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!--Legal-->
+            <TextView
+                style="@style/TextActivitySubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingEnd="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="Legal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryLight"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/privacyTile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/privacyIcon"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_document" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_toEndOf="@id/privacyIcon"
+                        android:text="Privacy policy"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/termsOfUseTile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/termsOfUseIcon"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_document" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_toEndOf="@id/termsOfUseIcon"
+                        android:text="Terms of use"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

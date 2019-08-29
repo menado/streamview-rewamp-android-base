@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userRoot"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/dp_5"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/photoLayout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/drawable_white_border_rect"
+        android:gravity="center"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/userEditImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_edit_white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_3"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        tools:text="Name" />
+</LinearLayout>

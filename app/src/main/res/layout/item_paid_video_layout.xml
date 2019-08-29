@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/paidLayout"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/wishListImage"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/sp_18"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginRight="30dp"
+        android:text="Revengers"
+        android:textColor="@color/white"
+        tools:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_below="@id/title"
+            android:textColor="@color/Grey_600"
+            android:textSize="@dimen/sp_12"
+            tools:text="@tools:sample/lorem/random" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_16"
+            android:ems="1"
+            android:visibility="gone"
+            android:textAlignment="textEnd"
+            android:id="@+id/videosAmount"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/exapandBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:visibility="gone"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="View Details"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/expandImg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/right_icon"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandableView"
+            android:visibility="gone"
+            android:layout_below="@id/exapandBtn"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/textDate"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:id="@+id/date"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Amount"
+            android:id="@+id/couponText"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textDate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Amount"
+            android:id="@+id/couponAmount"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Code"
+            android:textColor="@color/white"
+            android:id="@+id/couponCodeText"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/couponText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Code"
+            android:id="@+id/CouponCode"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/couponAmount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textColor="@color/white"
+            android:id="@+id/amtText"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/couponCodeText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:id="@+id/totalAmount"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/CouponCode"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Type"
+            android:textColor="@color/white"
+            android:id="@+id/userTypeText"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/amtText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Type"
+            android:id="@+id/userType"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/totalAmount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PPV Type"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/userTypeText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PPV Type"
+            android:id="@+id/PPVType"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/userType"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videoRowRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/videoRowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold"
+            tools:text="Title" />
+
+        <ImageView
+            android:id="@+id/videoSeeAll"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/ic_chevron_right_white_24dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/videoRowRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_video" />
+
+</LinearLayout>

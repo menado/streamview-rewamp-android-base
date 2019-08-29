@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/white" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/testDisplayArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_25"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/our_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_done_white_24dp"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:textSize="@dimen/sp_18"
+                android:text="@string/streamview_android_server"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/internet_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawableStart="@drawable/ic_done_white_24dp"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:textSize="@dimen/sp_18"
+                android:text="@string/internet_connection"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/checkNetworkImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.1"
+            android:src="@drawable/ic_check_network" />
+
+        <LinearLayout
+            android:id="@+id/controlArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_25">
+
+            <TextView
+                android:id="@+id/testStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/network_check_success"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/errorDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="@string/test_failed_desc"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/testingProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10" />
+
+            <Button
+                android:id="@+id/testBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colorPrimaryDark"
+                android:padding="@dimen/dp_10"
+                android:text="@string/start_test"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

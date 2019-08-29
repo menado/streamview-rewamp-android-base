@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/colorPrimary">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Categories"
+            app:titleTextColor="@color/white" />
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/shimmer"
+        layout="@layout/shimmer_category_fragment"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/categoriesRecycler"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/noResultLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/no_result"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/no_categories_found"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</FrameLayout>

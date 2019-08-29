@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shimmer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shimmer_auto_start="true"
+    app:shimmer_base_color="@color/black"
+    app:shimmer_colored="false"
+    app:shimmer_shape="radial"
+    tools:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_3">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_10"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_3">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_10"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_3">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_10"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_3">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_10"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_3">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_10"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>

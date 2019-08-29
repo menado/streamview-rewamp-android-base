@@ -1,0 +1,209 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    useLibrary('org.apache.http.legacy')
+    defaultConfig {
+        applicationId "com.streamhash.streamview"
+        minSdkVersion 17
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 64
+        versionName "4.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    buildTypes.each {
+        it.resValue 'string', 'google_map_api_key', 'AIzaSyAowkr96V8qfADrEVM7PULXRw8frkvOfAk'
+        it.resValue 'string', 'youtube_api_key', 'AIzaSyAw1nNVn8q5OShMOsfUWDHR9ESOLLDkZas'
+        it.resValue 'string', 'facebook_app_id', '2374328722809698'
+        it.resValue 'string', 'stripe_pk', 'pk_test_uDYrTXzzAuGRwDYtu7dkhaF3'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        quiet false
+        abortOnError true
+        ignoreWarnings false
+        disable 'RestrictedApi'
+    }
+}
+
+dependencies {
+    //Test
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Design
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:exifinterface:28.0.0'
+    implementation 'com.android.support:support-media-compat:28.0.0'
+    implementation 'com.android.support:animated-vector-drawable:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:palette-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    //Retrofit
+    implementation('com.squareup.retrofit2:retrofit:2.1.0') {
+        // exclude Retrofitâ€™s OkHttp dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    //Logger
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:9.0.0-rc3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc3'
+
+    //Bottom Nav bar
+    implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+
+    //Rating bar
+    implementation 'me.zhanghai.android.materialratingbar:library:1.3.1'
+
+    //Circular image
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:2.7.0'
+
+    //Google
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.android.gms:play-services-gcm:16.0.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-login:4.39.0'
+    implementation 'com.facebook.shimmer:shimmer:0.3.0'
+
+    //RecyclerViewPager
+    implementation 'com.lsjwzh:recyclerviewpager:1.0.8'
+
+    //Permissions
+    implementation 'pub.devrel:easypermissions:2.0.0'
+
+    //Event bus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //Calligraphy
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    //Calendar view
+    implementation('pl.rafman.widgets:scroll-calendar:2.1.0') {
+        exclude group: 'com.android.support'
+    }
+
+    //Stripe
+    implementation 'com.stripe:stripe-android:6.1.2'
+
+    //Http mime
+    implementation files('libs/httpmime-4.1.3.jar')
+
+    //youtube player
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    //Giraffe player
+    implementation project(':giraffeplayer2')
+
+    //Exo player
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.0'
+
+    //Cropper
+    implementation 'com.github.yalantis:ucrop:2.2.1'
+
+    //Like button
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+
+    //Payments
+    implementation 'com.stripe:stripe-android:6.1.2'
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+
+    //Vertical viewpager
+    implementation 'me.kaelaela:verticalviewpager:1.0.0@aar'
+
+    //Calligraphy
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    //CardsUI
+    implementation 'com.github.sharish:CreditCardView:v1.0.4'
+
+    //Others
+    implementation 'com.github.rubensousa:gravitysnaphelper:1.5'
+    implementation 'hanks.xyz:htextview-library:0.1.5'
+    implementation 'me.relex:circleindicator:1.2.1@aar'
+    implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    implementation 'com.google.android:flexbox:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //PR downloader
+    implementation 'com.mindorks.android:prdownloader:0.4.0'
+
+    //Permissions
+    implementation 'com.sensorberg.libs:permission-bitte:0.2.2'
+
+    //Localization
+    implementation 'com.akexorcist:localizationactivity:1.2.2'
+
+    //Implementación de la libreria
+    implementation ('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true;
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
