@@ -30,8 +30,10 @@ public class APIConstants {
 
 
     static class URLs {
-        static final String LIVE_URL = "http://adminview.streamhash.com/";
-        static final String STAGING_URL = "http://admin-streamview.botfingers.com/";
+        /*static final String LIVE_URL = "http://adminview.streamhash.com/";*/
+        /*static final String STAGING_URL = "http://admin-streamview.botfingers.com/";*/
+        static final String LIVE_URL = "http://admin.catatumboplay.com/";
+        static final String STAGING_URL = "http://admin.catatumboplay.com/";
         static final String BASE_URL = LIVE_URL;
 
         private URLs() {
@@ -282,7 +284,8 @@ public class APIConstants {
         }
     }
 
-    public static class STATIC_PAGES {
+    /*Backupcode*/
+   /* public static class STATIC_PAGES {
         public static final String TERMS = "terms";
         public static final String PRIVACY = "privacy";
         public static final String HELP = "help";
@@ -293,8 +296,20 @@ public class APIConstants {
         public static final String HELP_URL = "http://demo.streamhash.com/#/page/5";
         public static final String SPEED_TEST_URL = "https://fast.com";
         public static final String PRIVACY_URL = "http://demo.streamhash.com/#/page/6";
+    }*/
+    public static class STATIC_PAGES {
+
+    public static final String TERMS = "terms";
+    public static final String PRIVACY = "privacy";
+    public static final String HELP = "help";
+    public static final String ABOUT = "about";
+
+    public static final String ABOUT_URL = "https://catatumboplay.com/#/page/2";
+    public static final String TERMS_URL = "https://catatumboplay.com/#/page/4";
+    public static final String HELP_URL = "https://catatumboplay.com/#/page/5";
+    public static final String SPEED_TEST_URL = "https://fast.com";
+    public static final String PRIVACY_URL = "https://catatumboplay.com/#/page/4";
+
     }
-
-
     //ADD try catch to all API calls
 }
