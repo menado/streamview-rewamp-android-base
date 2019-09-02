@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Catatumbo.iml" filepath="$PROJECT_DIR$/Catatumbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Catatumbo-app.iml" filepath="$PROJECT_DIR$/app/Catatumbo-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/giraffeplayer2/Catatumbo-giraffeplayer2.iml" filepath="$PROJECT_DIR$/giraffeplayer2/Catatumbo-giraffeplayer2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/giraffeplayer2/giraffeplayer2.iml" filepath="$PROJECT_DIR$/giraffeplayer2/giraffeplayer2.iml" />
     </modules>

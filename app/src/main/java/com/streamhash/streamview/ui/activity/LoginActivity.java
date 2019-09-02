@@ -1,11 +1,15 @@
 package com.streamhash.streamview.ui.activity;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -169,11 +173,10 @@ public class LoginActivity extends BaseActivity implements GoogleApiClient.OnCon
 
     protected void doLoginUser() {
         UiUtils.showLoadingDialog(this);
-        Call<String> call = apiInterface.loginUser(edEmail.getText().toString()
-                , edPassword.getText().toString()
-                , Constants.MANUAL_LOGIN
-                , Constants.ANDROID
-                , NetworkUtils.getDeviceToken(this));
+        Call<String> call = apiInterface.loginUser(edEmail.getText().toString(), edPassword.getText().toString(), Constants.MANUAL_LOGIN, Constants.ANDROID, NetworkUtils.getDeviceToken(this));
+
+       Log.i("LoginActivity","VARIABLE CALL: " + edEmail.getText().toString() + " " + edPassword.getText().toString() + " " + Constants.MANUAL_LOGIN + " " + Constants.ANDROID + " " + NetworkUtils.getDeviceToken(this));
+
         call.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
@@ -181,6 +184,8 @@ public class LoginActivity extends BaseActivity implements GoogleApiClient.OnCon
                 JSONObject loginResponse = null;
                 try {
                     loginResponse = new JSONObject(response.body());
+
+                    Log.i("LoginActivity", "JSON: " + loginResponse);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 } catch (Exception e) {

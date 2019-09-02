@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">StreamView</string>
+    <string name="app_name">Catatumbo Play</string>
 
 
     <string name="something_went_wrong">Something went wrong. Maybe Internet down!</string>

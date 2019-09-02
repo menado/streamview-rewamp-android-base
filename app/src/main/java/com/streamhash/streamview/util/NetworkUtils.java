@@ -6,7 +6,9 @@ import android.media.MediaMetadataRetriever;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.Settings;
+import android.support.annotation.RequiresApi;
 
 import com.downloader.PRDownloader;
 import com.streamhash.streamview.R;
@@ -52,6 +54,7 @@ public class NetworkUtils {
         UiUtils.showShortToast(context, context.getString(R.string.something_went_wrong));
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     private static int getUniqueId(String url, String dirPath, String fileName) {
         String string = url + File.separator + dirPath + File.separator + fileName;
 
@@ -72,6 +75,7 @@ public class NetworkUtils {
         return hex.toString().hashCode();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public static void downloadVideo(Context context, int adminVideoId, String name, String url) {
         String fileName = MessageFormat.format("{0}.30.{1}.mp4", adminVideoId, name);
         Downloader downloader = new Downloader(context);

@@ -62,8 +62,8 @@
     <string name="stripepk">pk_test_uDYrTXzzAuGRwDYtu7dkhaF3</string>
 
     <!--Facebook, Dont translate-->
-    <string name="facebook">351518151959383</string>
-    <!--<string name="facebook">2374328722809698</string>-->
+    <!--<string name="facebook">351518151959383</string>-->
+    <string name="facebook">2374328722809698</string> <!--Validado-->
     <string name="fb_login_protocol_scheme">fb2374328722809698</string>
     <string name="kids">Kids</string>
     <string name="no_videos_here">No videos here</string>
