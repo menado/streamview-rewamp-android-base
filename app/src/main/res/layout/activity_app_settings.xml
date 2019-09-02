@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:navigationIcon="@drawable/ic_arrow_back"
-            app:title="App Settings"
+            app:title="Configuraciones"
             app:titleTextColor="@color/white" />
 
     </android.support.design.widget.AppBarLayout>
@@ -41,7 +41,7 @@
                 android:paddingTop="@dimen/dp_10"
                 android:paddingEnd="@dimen/dp_20"
                 android:paddingBottom="@dimen/dp_10"
-                android:text="Notifications" />
+                android:text="Notificaciones" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -123,7 +123,7 @@
                 android:paddingTop="@dimen/dp_10"
                 android:paddingEnd="@dimen/dp_20"
                 android:paddingBottom="@dimen/dp_10"
-                android:text="About" />
+                android:text="Acerca de" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -154,7 +154,7 @@
                         android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginEnd="@dimen/dp_10"
                         android:layout_toEndOf="@id/deviceIcon"
-                        android:text="Device"
+                        android:text="Dispositivo"
                         android:textColor="@color/white" />
 
                     <TextView
@@ -167,7 +167,7 @@
                         android:layout_toEndOf="@id/deviceIcon"
                         android:textColor="@color/white"
                         android:textSize="@dimen/sp_12"
-                        tools:text="About device" />
+                        tools:text="Acerca del Dispositivo" />
 
                 </RelativeLayout>
             </LinearLayout>
@@ -182,7 +182,7 @@
                 android:paddingTop="@dimen/dp_10"
                 android:paddingEnd="@dimen/dp_20"
                 android:paddingBottom="@dimen/dp_10"
-                android:text="Diagnostics" />
+                android:text="Diagnosticos" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -217,7 +217,7 @@
                         android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginEnd="@dimen/dp_10"
                         android:layout_toEndOf="@id/checkNetwork"
-                        android:text="Check Network"
+                        android:text="Comprobar Red"
                         android:textColor="@color/white" />
 
                 </RelativeLayout>
@@ -266,7 +266,7 @@
                 android:paddingTop="@dimen/dp_10"
                 android:paddingEnd="@dimen/dp_20"
                 android:paddingBottom="@dimen/dp_10"
-                android:text="Legal" />
+                android:text="Derechos" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -301,7 +301,7 @@
                         android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginEnd="@dimen/dp_10"
                         android:layout_toEndOf="@id/privacyIcon"
-                        android:text="Privacy policy"
+                        android:text="Politicas de Privacidad"
                         android:textColor="@color/white" />
 
                 </RelativeLayout>
@@ -333,7 +333,7 @@
                         android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginEnd="@dimen/dp_10"
                         android:layout_toEndOf="@id/termsOfUseIcon"
-                        android:text="Terms of use"
+                        android:text="Términos de Uso"
                         android:textColor="@color/white" />
 
                 </RelativeLayout>

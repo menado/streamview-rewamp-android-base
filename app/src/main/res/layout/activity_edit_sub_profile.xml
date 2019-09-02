@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dp_10"
-                android:text="Cancel"
+                android:text="Cancelar"
                 android:textAllCaps="true"
                 android:textColor="@color/gray" />
         </LinearLayout>
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dp_10"
-                android:text="Save"
+                android:text="Guardar"
                 android:textAllCaps="true"
                 android:textColor="@color/gray" />
         </LinearLayout>
@@ -108,7 +108,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Picture"
+            android:text="Foto de Perfil"
             android:textColor="@color/gray"
             android:textSize="@dimen/sp_16" />
 
