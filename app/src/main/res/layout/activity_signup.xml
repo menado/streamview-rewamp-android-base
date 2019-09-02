@@ -84,7 +84,6 @@
                         android:text="@string/sign_in"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:visibility="gone"
                         tools:ignore="RtlHardcoded" />
 
                 </LinearLayout>

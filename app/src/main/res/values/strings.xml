@@ -2,55 +2,55 @@
     <string name="app_name">Catatumbo Play</string>
 
 
-    <string name="something_went_wrong">Something went wrong. Maybe Internet down!</string>
+    <string name="something_went_wrong">Algo salió mal. ¡Quizás el internet se cayó!</string>
 
 
     <!--Activity texts-->
-    <string name="sign_in">Sign In</string>
-    <string name="password">Password</string>
-    <string name="email">Email</string>
-    <string name="or">OR</string>
-    <string name="register">New here? Sign Up now</string>
-    <string name="phone">Phone (Optional)</string>
-    <string name="viewplans">View Plans</string>
-    <string name="myplans">My Plans</string>
-    <string name="invoice">Invoice</string>
-    <string name="months">Months</string>
-    <string name="title">Title</string>
-    <string name="status">Status</string>
-    <string name="check_network">Check your internet</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="password">Contraseña</string>
+    <string name="email">Correo</string>
+    <string name="or">O</string>
+    <string name="register">¿Eres nuevo? Registrate ahora mismo</string>
+    <string name="phone">Teléfono (Opcional)</string>
+    <string name="viewplans">Ver planes</string>
+    <string name="myplans">Mis planes</string>
+    <string name="invoice">Factura</string>
+    <string name="months">Meses</string>
+    <string name="title">Titulo</string>
+    <string name="status">Estado</string>
+    <string name="check_network">Revisa tu intenet.</string>
 
     <!--Drawer-->
 
     <!--Fragment texts-->
-    <string name="report">Report as Spam</string>
-    <string name="embedlink">Copy Embedded Link</string>
-    <string name="name">Name</string>
-    <string name="password_not_match">Password does not match</string>
-    <string name="failed_initialize">Failured to Initialize!</string>
-    <string name="history">History</string>
-    <string name="share">Share</string>
-    <string name="more">More</string>
-    <string name="submit">Submit</string>
-    <string name="error_player">Youtube player error</string>
-    <string name="terms_conditions">Terms &amp; Conditions</string>
-    <string name="privacy_policy">Privacy Policy</string>
-    <string name="confirmation">Confirmation</string>
+    <string name="report">Reportar correo no deseado</string>
+    <string name="embedlink">Copiar enlace incrustado</string>
+    <string name="name">Nombre</string>
+    <string name="password_not_match">Las contraseñas no coinciden</string>
+    <string name="failed_initialize">¡Fallo al inicializar!</string>
+    <string name="history">Historia</string>
+    <string name="share">Compartir</string>
+    <string name="more">Más</string>
+    <string name="submit">Enviar</string>
+    <string name="error_player">Error del reproductor de YouTube</string>
+    <string name="terms_conditions">Terminos &amp; Condiciones</string>
+    <string name="privacy_policy">Politicas de Privacidad</string>
+    <string name="confirmation">Confirmación</string>
     <string name="no">No</string>
-    <string name="yes">Yes</string>
-    <string name="cards">Cards</string>
-    <string name="manage_profile">Manage Profile</string>
-    <string name="cant_play_video">Sorry..!! Can\'t play the video right now, please try again later.</string>
+    <string name="yes">Si</string>
+    <string name="cards">Tarjetas</string>
+    <string name="manage_profile">Administrar Perfil</string>
+    <string name="cant_play_video">¡Lo sentimos! No podemos reproducir el video en este momento, intente nuevamente más tarde.</string>
     <string name="ok">OK</string>
-    <string name="copy_clipboard">Link has been copied to your clipboard</string>
-    <string name="reason_to_report">Reason to report</string>
-    <string name="pay">Pay</string>
-    <string name="spam_videos">Spam Videos</string>
-    <string name="coupon_amount">Coupon Amount: </string>
-    <string name="total_amount">Total Amount: </string>
-    <string name="cast">Cast</string>
-    <string name="clear_all">Clear All</string>
-    <string name="apply">Apply</string>
+    <string name="copy_clipboard">El enlace ha sido copiado a su portapapeles</string>
+    <string name="reason_to_report">Motivo para reportar</string>
+    <string name="pay">Pago</string>
+    <string name="spam_videos">Videos no deseados</string>
+    <string name="coupon_amount">Cantidad de cupón: </string>
+    <string name="total_amount">Cantidad total: </string>
+    <string name="cast">Emitir</string>
+    <string name="clear_all">Limpiar Todo</string>
+    <string name="apply">Aplicar</string>
 
 
     <!--DONT TRANSLATE FROM HERE-->

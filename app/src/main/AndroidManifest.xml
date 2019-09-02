@@ -23,6 +23,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true"
+
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".ui.activity.MoreVideosActivity"
