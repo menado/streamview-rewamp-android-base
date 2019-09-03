@@ -8,7 +8,7 @@
     <!--Activity texts-->
     <string name="sign_in">Ingresar</string>
     <string name="password">Contraseña</string>
-    <string name="email">Correo Electronico</string>
+    <string name="email">Correo Electrónico</string>
     <string name="or">O</string>
     <string name="register">¿Eres nuevo? Registrate ahora mismo</string>
     <string name="phone">Teléfono (Opcional)</string>
@@ -66,7 +66,7 @@
     <string name="facebook">2374328722809698</string> <!--Validado-->
     <string name="fb_login_protocol_scheme">fb2374328722809698</string>
     <string name="kids">Niños</string>
-    <string name="no_videos_here">No Existen Vídeos</string>
+    <string name="no_videos_here">No Existen Videos</string>
     <string name="help">Ayuda</string>
     <string name="sign_up">Registrarse</string>
     <string name="account_login">¿Ya eres usuario? Iniciar Sesión</string>
@@ -127,11 +127,11 @@
     <string name="wish_list">Wish list</string>
     <string name="email_notifications">Notificaciones del Correo</string>
     <string name="push_notifications">Notificaciones</string>
-    <string name="no_plans_avaliable">No Plans Available</string>
+    <string name="no_plans_avaliable">No Hay Planes Disponibles</string>
     <string name="amount">Amount</string>
     <string name="paid_date">Paid date</string>
     <string name="no_categories_found">No categories found</string>
-    <string name="no_notifications">No Notifications</string>
+    <string name="no_notifications">No Hay Notificaciones</string>
     <string name="vertical_ellipsis">&#8942;</string>
     <string name="about">About</string>
     <string name="speed_test">Speed Test</string>

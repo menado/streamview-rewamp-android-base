@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:navigationIcon="@drawable/ic_arrow_back"
-            app:title="Notifications"
+            app:title="Notificaciones"
             app:titleTextColor="@color/white" />
     </android.support.design.widget.AppBarLayout>
 
