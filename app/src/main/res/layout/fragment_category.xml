@@ -15,7 +15,7 @@
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:title="Categories"
+            app:title="Categorías"
             app:titleTextColor="@color/white" />
     </android.support.design.widget.AppBarLayout>
 

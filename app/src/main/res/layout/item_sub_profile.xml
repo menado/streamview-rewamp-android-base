@@ -42,5 +42,5 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="@dimen/sp_20"
-        tools:text="Name" />
+        tools:text="Nombre" />
 </LinearLayout>

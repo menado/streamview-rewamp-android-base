@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:title="Webview"
+            app:title="Vista Web"
             app:navigationIcon="@drawable/ic_arrow_back"
             app:titleTextColor="@color/white" />
     </android.support.design.widget.AppBarLayout>

@@ -41,6 +41,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexKeepFile file('multidex-config.txt')
         }
     }
     repositories {
@@ -120,7 +121,7 @@ dependencies {
     implementation 'com.airbnb.android:lottie:2.7.0'
 
     //Google
-    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
     implementation 'com.google.android.gms:play-services-maps:16.0.0'
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
@@ -203,6 +204,9 @@ dependencies {
     implementation ('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
         transitive = true;
     }
+
+    //Multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
 
     //Butter
   /*  implementation 'com.jakewharton:butterknife:(insert latest version)'

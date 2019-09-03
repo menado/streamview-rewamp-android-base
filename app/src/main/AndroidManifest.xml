@@ -10,7 +10,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
-    <uses-feature
+
+
+<uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
 
@@ -23,7 +25,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true"
-
         android:hardwareAccelerated="false"
         android:largeHeap="true"
 

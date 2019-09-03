@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Basic"
+        android:text="Básico"
         android:textColor="@color/white"
         android:textSize="@dimen/sp_18" />
 
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
         android:layout_centerHorizontal="true"
-        android:text="No of Account 05"
+        android:text="No de Cuentas 05"
         android:textColor="@color/Grey_500"
         android:textSize="@dimen/sp_14" />
 
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/amount"
         android:layout_centerHorizontal="true"
-        android:text="/Per Month"
+        android:text="/Por Mes"
         android:textColor="@color/Grey_500"
         android:textSize="@dimen/sp_14" />
 
@@ -87,7 +87,7 @@
         android:paddingTop="8dp"
         android:paddingRight="15dp"
         android:paddingBottom="8dp"
-        android:text="View Details"
+        android:text="Ver Detalles"
         android:textColor="@color/white" />
 
 </RelativeLayout>

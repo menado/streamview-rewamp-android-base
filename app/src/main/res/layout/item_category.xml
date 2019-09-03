@@ -30,6 +30,6 @@
         android:textColor="@color/white"
         android:textSize="@dimen/sp_20"
         android:textStyle="bold"
-        tools:text="Nice bro" />
+        tools:text="Bien hecho, hermano" />
 
 </RelativeLayout>

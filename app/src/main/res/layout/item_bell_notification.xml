@@ -29,7 +29,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/sp_16"
             android:textStyle="bold"
-            tools:text="New arrival" />
+            tools:text="Nueva llegada" />
 
         <TextView
             android:id="@+id/desc"
